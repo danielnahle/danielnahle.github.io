@@ -1,0 +1,546 @@
+.wrapper {
+    display: block;
+    width: 100%;
+    background-color: rgba(255,255,255,255);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Century Gothic', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+}
+.title-bar {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 3.2815em;
+}
+
+.title-bar .UL {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding : 0;
+    overflow: visible;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(41, 128, 185);
+    height: 3.2815em;
+
+    
+}
+
+.title-bar button {
+    font-family: inherit;
+    font-size: 100%;
+    background-color: inherit;
+    border: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.title-bar button:hover{
+   cursor:pointer;
+}
+
+.title-bar .LI {
+    width: auto;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em .5em;
+    margin: 0em 1em;
+    color: white;
+    height: 1.25em;
+}
+
+.title-bar .LI a{
+    text-decoration: none;
+    color: white;
+}
+
+.title-bar.LI:hover {
+    border-bottom: solid white .075em;
+    cursor: pointer;
+}
+
+.title-bar.LI.active {
+    border-bottom: solid white .075em;
+    font-weight: bold;
+}
+
+.title-bar.LI.Title:hover {
+    border-bottom: none;
+    cursor: default;
+}
+
+.title-bar .LI.Icon {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em .5em;
+    margin: 0em 1em;
+    color: white;
+    height: 1.25em;
+}
+
+.title-bar .LI.Title.Mobile {
+    display: block;
+    float: none;
+}
+
+.title-bar .LI.Mobile {
+    display: block;
+    float: none;
+}
+
+.title-bar .LI.Icon.Mobile {
+    display: block;
+    float: none;
+}
+
+.title-bar.LI.Title {
+    float: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em .5em;
+    margin: 0em 1em;
+    color: white;
+    height: 1.25em;
+    font-weight: bold;
+}
+
+@media screen and (max-width:68.750em) {
+    .title-bar .UL {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding : 0;
+        overflow: visible;
+        width: 100%;
+        justify-content: center;
+        background-color: rgb(41, 128, 185);
+        height: 3.2815em;
+    
+        
+    }
+}
+
+@media print  {
+    .title-bar .UL {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding : 0;
+        overflow: visible;
+        width: 100%;
+        justify-content: center;
+        background-color: rgb(0, 161, 126);
+        height: 3.2815em;
+    
+        
+    }
+}
+.cover {
+    width: 100%;
+    height: 20em;
+    background-color: rgb(52, 152, 219);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width:68.750em) {
+    .cover {
+        display: none;
+    }
+}
+@media print {
+    .cover {
+        display: none;
+    }
+}
+.Card {
+    display:block;
+    z-index: 1;
+    width: 70%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 7em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    margin-bottom: 2em;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.tooltip {
+    position: fixed;
+    z-index: 2;
+    width: auto;
+    height: auto;
+    padding: .4em;
+    border-radius: 1em;
+    color: rgb(255, 255, 255);
+    background-color:rgba(56, 56, 56, .7);
+    text-align:center;
+    display: none;
+}
+
+.Card-Header {
+    position: relative;
+    margin:0;
+    width: 100%;
+    height: auto;
+    background-color: rgb(56, 56, 56);
+    border-bottom: solid rgb(207, 207, 207) .05em;
+}
+
+.Card-Header.Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+}
+
+.Card-Content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5em;
+    background-color: white;
+}
+
+
+.Card-Main {
+    width:80%;
+    padding-top: 3em;
+    margin:auto;
+    text-align: left;
+}
+
+.Card-Main h3 {
+   color: rgb(37, 37, 37);
+   text-transform: uppercase;
+   font-weight: bold;
+   border-bottom: rgb(200, 200, 200) solid .1em;
+   padding-bottom: .5em;
+  
+}
+
+.Card-Main-Flex {
+    display:flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.Experience {
+    width:70%
+}
+
+.Experience ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.Skills {
+    width:25%
+}
+
+.Skills ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.Skills strong {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display:block;
+}
+
+a:visited {
+    color: initial;
+}
+
+.Skills li{
+    list-style: none;
+    margin: 0;
+    color: rgb(56, 56, 56);
+
+}
+
+.Card-Main p {
+    color: rgb(56, 56, 56);
+    font-family: inherit;
+    margin-bottom: 1em;
+ }
+
+.Card-Header-Image {
+    display:block;
+    width: 15em;
+    height: 15em;
+    margin: 0;
+    padding:0;
+    
+}
+
+.Card-Header-Image img {
+    width: 15em;
+    height: 15em;
+}
+
+.Card-Header-Description {
+    display:block;
+    margin: 0;
+    padding:0;
+    width: 100%;
+}
+
+.Card-Header-Content {
+    display:block;
+    margin: 1.5em 2.5em;
+    padding:0;
+    text-align: left;
+    width: 15em;
+}
+
+.projectLI {
+    margin-bottom: 1em;
+}
+
+.Card-Header-Content h1 {
+    display:block;
+    font-family:  inherit;
+    color: rgb(253, 253, 253);
+    margin:0;
+}
+
+.Card-Header-Content h2 {
+    display:block;
+    font-family:  inherit;
+    color: rgb(172, 172, 172);
+    margin:0;
+}
+
+.Card-Header-Content h4 {
+    display:block;
+    font-family:  inherit;
+    color: rgb(172, 172, 172);
+    margin:0;
+}
+
+.Left-Icon-Text {
+    width: auto;
+    height: auto;
+    overflow: auto;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: .35em;
+}
+
+.Left-Icon-Text img {
+    margin-right: .5em;
+    margin-top: .15em;
+}
+
+.Left-Icon-Text a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:68.750em) {
+    .Card {
+        display:block;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align:center;
+        margin-bottom: 2em;
+        background-color: white;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    .Card-Header.Container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+        padding: 1em 0;
+    }
+
+    .Card-Header-Content {
+        display: block;
+        padding: 0;
+        text-align: center;
+        width: 15em;
+        margin: auto;
+    }
+
+    .Left-Icon-Text {
+        width: auto;
+        height: auto;
+        overflow: auto;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: .35em;
+    }
+
+    .Card-Main-Flex {
+        display: block;
+        text-align: center;
+        justify-content: space-between;
+    }
+    
+    .Skills {
+        width: 100%;
+    }
+    .Experience {
+        width: 100%;
+    }
+
+    .Card-Main {
+        padding: 3em 2em 0 2em;
+        margin: auto;
+        text-align: left;
+    }
+
+    .projectLI {
+        margin-bottom: 2.5em;
+    }
+
+    .Left-Icon-Text img {
+        margin: auto .5em auto 0;
+    }
+    
+
+}
+
+@media print {
+    .Card {
+        display:block;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align:center;
+        margin-bottom: 2em;
+        background-color: white;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    .Card-Header.Container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+        padding: 1em 0;
+    }
+
+    .Card-Header-Content {
+        display: block;
+        padding: 0;
+        text-align: center;
+        width: 15em;
+        margin: auto;
+    }
+
+    .Left-Icon-Text {
+        width: auto;
+        height: auto;
+        overflow: auto;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: .35em;
+    }
+
+    .Card-Main-Flex {
+        display: block;
+        text-align: center;
+        justify-content: space-between;
+    }
+    
+    .Skills {
+        width: 100%;
+    }
+    .Experience {
+        width: 100%;
+    }
+
+    .Card-Main {
+        padding: 3em 2em 0 2em;
+        margin: auto;
+        text-align: left;
+    }
+
+    .projectLI {
+        margin-bottom: 2.5em;
+    }
+
+    .Left-Icon-Text img {
+        margin: auto .5em auto 0;
+    }
+    
+
+}
+
+.FooterBar{
+    width: 100%;
+    position: relative;
+    bottom: 1;
+    background-color:rgb(52, 152, 219);
+    height: 4em;
+    text-align: center;
+    margin:auto;
+    box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.35);
+}
+
+.FooterBar p {
+     text-align: center;
+    vertical-align: middle;
+    line-height: 2em;
+    color: white;
+}
+
+.FooterBar ul{
+    list-style: none;
+   
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+.FooterBar a{
+    display:block;
+    margin: auto;
+
+}
+
+.FooterBar li{
+    display: inline-block;
+
+}
